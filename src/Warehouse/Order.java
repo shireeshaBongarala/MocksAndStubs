@@ -31,6 +31,7 @@ public class Order {
 
     public void fill(Warehouse warehouse) {
         if(warehouse.getInventory(product) >= quantity){
+            warehouse.removeInventory(product, quantity);
             filled = true;
         }
     }

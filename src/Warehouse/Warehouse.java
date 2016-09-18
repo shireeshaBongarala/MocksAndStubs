@@ -18,4 +18,8 @@ public class Warehouse {
     public Integer getInventory(String product){
         return productQuantityList.get(product);
     }
+
+    public Boolean removeInventory(String product, Integer quantity){
+        throw new UnsupportedOperationException("Not Implemented");
+    }
 }
